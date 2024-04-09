@@ -86,25 +86,44 @@ main{
     align-items: center;
     gap: 10px;  
 }
-img {
+.media {
     border: 3px solid black ;
     border-bottom-style: none;
 }
 
 footer {
-    background-color: azure;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
+    display: grid;
+    grid-template-columns: 700px;
+    justify-content: center;
+    
 }
 .socialCon {
     
+    display: grid;
+    width: 100%;
+    place-items: center;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-column-gap: 20px;
+    justify-content: center;
+    
+    
+  
+
+}
+.footNote {
+    display: grid;
+    width: 100%;
+    place-items: center;
+}
+.sContain {
+    margin: auto 0;
 }
 
 
-
-
-
+.imgS {
+    width: 50px;
+}
 
 
 
@@ -119,8 +138,13 @@ footer {
 
 
 @media(max-width: 620px) {
-    img {
+    .media {
         display: none;
     }
   }
 
+  @media(max-width: 450px) {
+    .footNote {
+        display: none;
+    }
+  }
